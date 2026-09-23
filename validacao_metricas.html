@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Validação de Métricas SR</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #f5f5f5; color: #123; }
+    .box { max-width: 900px; background: #fff; border-left: 5px solid #f2c700; padding: 18px; }
+    li { margin: 8px 0; }
+    code { background: #eef3f1; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <h1>Regra oficial das métricas de SR</h1>
+    <ul>
+      <li>O total considera <strong>Números SR únicos</strong> criados no ano da página.</li>
+      <li>Status <code>Closed</code>, <code>Close Requested</code>, <code>Resolved</code> e <code>Fechado</code> são classificados como fechados.</li>
+      <li>Cada SR entra em apenas um mês: o mês de <code>Criado_dt</code>.</li>
+      <li>No mês de criação, cada SR é classificada pelo status atual como aberta ou fechada.</li>
+      <li>Em qualquer mês, <strong>Abertos + Fechados = Criados</strong>.</li>
+      <li>O percentual mensal é calculado por <strong>Fechados ÷ Criados</strong>.</li>
+      <li>Datas brasileiras são interpretadas como <code>DD/MM/AAAA</code>.</li>
+    </ul>
+  </main>
+</body>
+</html>

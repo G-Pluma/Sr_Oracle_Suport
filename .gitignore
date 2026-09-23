@@ -1,0 +1,13 @@
+**/credenciais.py
+.env
+**/.env
+config/.env
+# Scripts locais de instalação
+*_aplicar_*.py
+*_instalar_*.py
+
+# Backups automáticos
+*.backup_*.html
+*.backup_*.js
+*.py
+/python
